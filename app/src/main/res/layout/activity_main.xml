@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tutorialscache.facebookintegrationandroid.MainActivity">
+
+    <ImageView
+        android:id="@+id/fbIv"
+        android:layout_width="140dp"
+        android:layout_height="55dp"
+        android:elevation="3dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="30dp"
+        android:padding="3dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/fb" />
+    <ImageView
+        android:id="@+id/userIv"
+        android:padding="10dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/fbIv"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <TextView
+        android:text="Email:"
+        android:layout_below="@id/userIv"
+        android:id="@+id/emailLabelTv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/emailTv"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/emailLabelTv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textSize="20dp"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Name:"
+        android:layout_below="@id/emailTv"
+        android:id="@+id/nameLabelTv"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/nameTv"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/nameLabelTv"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ProgressBar
+        android:id="@+id/mPb"
+        android:visibility="gone"
+        android:layout_below="@id/nameTv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

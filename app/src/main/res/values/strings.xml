@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Facebook Integration Android</string>
+    <string name="facebook_app_id">xxx</string>
+    <string name="fb_login_protocol_scheme">xxx</string>
+</resources>
